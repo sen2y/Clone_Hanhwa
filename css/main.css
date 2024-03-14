@@ -1,0 +1,86 @@
+@import "https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css";
+@font-face {
+  font-family: "Hanwha";
+  src: url("../font/03HanwhaL.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hanwha";
+  src: url("../font/02HanwhaR.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hanwha";
+  src: url("../font/01HanwhaB.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: "Hanwha", "Pretendard", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+}
+
+.bg-text {
+  display: block;
+  text-indent: -9999px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+header {
+}
+
+header .header-inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding-inline: 80px;
+}
+
+header .header-inner .logo {
+  position: relative;
+  display: block;
+  width: 362px;
+  height: 180px;
+  background: url(https://www.hanwhasystems-recruit.co.kr/assets/images/brandLogo_01.png)
+    no-repeat 0 center / 362px auto;
+  z-index: 998;
+}
+
+header .header-inner .logo nav {
+}
+
+.header .header-inner .logo nav .box {
+}
+
+.header .header-inner .logo nav .box ul {
+  /* display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0 30px; */
+}
+
+.header .header-inner .logo nav .box ul > li {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  width: 100%;
+  height: 1.5rem;
+  padding: 0;
+  font-weight: 900;
+  font-size: 0.8rem;
+  line-height: 1.6rem;
+  color: #fff; */
+}
