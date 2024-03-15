@@ -1006,8 +1006,8 @@ header .logo {
   display: block;
   width: 362px;
   height: 180px;
-  background: url(https://www.hanwhasystems-recruit.co.kr/assets/images/brandLogo_01.png)
-    no-repeat 0 center / 362px auto;
+  background: url("https://www.hanwhasystems-recruit.co.kr/assets/images/brandLogo_01.png")
+    no-repeat 0 center/362px auto;
   z-index: 998;
 }
 
@@ -1147,11 +1147,12 @@ header.fixed .header-inner {
   background-position: right 1rem center;
   background-repeat: no-repeat;
   background-size: auto 0.8rem;
-  background-image: url("https://www.hanwhasystems-recruit.co.kr/images/link_arrow.svg");
+  background-image: url("https://www.hanwhasystems-recruit.co.kr/assets/images/link_arrow.svg");
 }
 
 .headingWrap {
-  background-image: url("https://www.hanwhasystems-recruit.co.kr/assets/images/heading_visual_01.jpg");
+  background-image: url("https://www.hanwhasystems-recruit.co.kr/assets/images/heading_visual_01.jpg"),
+    url("https://www.hanwhasystems-recruit.co.kr/assets/images/heading_bg_01.jpg");
   background-repeat: no-repeat, repeat-x;
   background-position: center 0, center 0;
   background-size: auto 48.1rem;
@@ -1163,7 +1164,7 @@ header.fixed .header-inner {
   left: calc(50% + 16.85rem);
   width: 9.65rem;
   height: 8.85rem;
-  background: url("https://www.hanwhasystems-recruit.co.kr/images/heading_light_box.png")
+  background: url("https://www.hanwhasystems-recruit.co.kr/assets/images/heading_light_box.png")
     no-repeat 0 0 / auto 8.85rem;
 }
 
@@ -1176,11 +1177,11 @@ header.fixed .header-inner {
 }
 
 .headingWrap .lightBox .light01 {
-  background-image: url("https://www.hanwhasystems-recruit.co.kr/images/heading_light_01.png");
+  background-image: url("https://www.hanwhasystems-recruit.co.kr/assets/images/heading_light_01.png");
 }
 
 .headingWrap .lightBox .light02 {
-  background-image: url("https://www.hanwhasystems-recruit.co.kr/images/heading_light_02.png");
+  background-image: url("https://www.hanwhasystems-recruit.co.kr/assets/images/heading_light_02.png");
 }
 
 .headingWrap .char {
@@ -1189,7 +1190,7 @@ header.fixed .header-inner {
   left: calc(50% + 13rem);
   width: 9.6rem;
   height: 13.55rem;
-  background: url("https://www.hanwhasystems-recruit.co.kr/images/heading_char.png")
+  background: url("https://www.hanwhasystems-recruit.co.kr/assets/images/heading_char.png")
     no-repeat 0 0 / auto 13.55rem;
 }
 
@@ -1273,7 +1274,7 @@ header.fixed .header-inner {
 .headingWrap .counting .count em {
   width: 1.5rem;
   height: 1.5rem;
-  background: url("https://www.hanwhasystems-recruit.co.kr/images/icon_clock.svg")
+  background: url("https://www.hanwhasystems-recruit.co.kr/assets/images/icon_clock.svg")
     no-repeat left center/auto 1.2rem;
 }
 
@@ -1669,7 +1670,7 @@ header.fixed .header-inner {
   left: 13.15rem;
   width: 5.05rem;
   height: 7.45rem;
-  background-image: url("https://www.hanwhasystems-recruit.co.kr/images/duty_char_01.png");
+  background-image: url("https://www.hanwhasystems-recruit.co.kr/assets/images/duty_char_01.png");
   background-size: auto 7.45rem;
 }
 
@@ -1678,7 +1679,7 @@ header.fixed .header-inner {
   left: 12rem;
   width: 7rem;
   height: 6.8rem;
-  background-image: url("https://www.hanwhasystems-recruit.co.kr/images/duty_char_02.png");
+  background-image: url("https://www.hanwhasystems-recruit.co.kr/assets/images/duty_char_02.png");
   background-size: auto 6.8rem;
 }
 
@@ -1771,13 +1772,13 @@ header.fixed .header-inner {
   left: calc(50% - 39.3rem);
   width: 10.65rem;
   height: 3.7rem;
-  background-image: url("https://www.hanwhasystems-recruit.co.kr/images/object_ship.png");
+  background-image: url("https://www.hanwhasystems-recruit.co.kr/assets/images/object_ship.png");
   background-size: auto 3.7rem;
   animation: ship 1s infinite alternate;
 }
 
 .recruitInfoWrap {
-  background: url("https://www.hanwhasystems-recruit.co.kr/images/process_bg.png")
+  background: url("https://www.hanwhasystems-recruit.co.kr/assets/images/process_bg.png")
     no-repeat center top 6.6rem;
 }
 
@@ -1845,6 +1846,7 @@ header.fixed .header-inner {
 
 .recruitInfoWrap .table-wrap * {
   font-family: "Pretendard";
+  vertical-align: middle;
 }
 
 .recruitInfoWrap .table-wrap table {
@@ -1954,7 +1956,7 @@ header.fixed .header-inner {
   left: calc(50% - 40rem);
   width: 13.15rem;
   height: 10.35rem;
-  background-image: url("https://www.hanwhasystems-recruit.co.kr/images/object_char.png");
+  background-image: url("https://www.hanwhasystems-recruit.co.kr/assets/images/object_char.png");
   background-size: auto 10.35rem;
   animation: char-wrap 1s infinite alternate;
 }
@@ -1975,8 +1977,8 @@ header.fixed .header-inner {
 
 .faqWrap {
   background: #406488
-    url("https://www.hanwhasystems-recruit.co.kr/images/faq_bg.png") no-repeat
-    center 0;
+    url("https://www.hanwhasystems-recruit.co.kr/assets/images/faq_bg.png")
+    no-repeat center 0;
 }
 
 .faqWrap .section-inner {
@@ -1992,7 +1994,7 @@ header.fixed .header-inner {
   left: calc(50% + 17.5rem);
   width: 8.5rem;
   height: 10.4rem;
-  background-image: url("https://www.hanwhasystems-recruit.co.kr/images/object_char02.png");
+  background-image: url("https://www.hanwhasystems-recruit.co.kr/assets/images/object_char02.png");
   background-size: auto 10.4rem;
   animation: char-wrap 1s infinite alternate;
 }
@@ -2126,15 +2128,15 @@ header.fixed .header-inner {
 }
 
 .popupWrap.comPop01 .popHeader {
-  background-image: url("https://www.hanwhasystems-recruit.co.kr/images/pop_info_visual_01.jpg");
+  background-image: url("https://www.hanwhasystems-recruit.co.kr/assets/images/pop_info_visual_01.jpg");
 }
 
 .popupWrap.comPop02 .popHeader {
-  background-image: url("https://www.hanwhasystems-recruit.co.kr/images/pop_info_visual_02.jpg");
+  background-image: url("https://www.hanwhasystems-recruit.co.kr/assets/images/pop_info_visual_02.jpg");
 }
 
 .popupWrap.comPop03 .popHeader {
-  background-image: url("https://www.hanwhasystems-recruit.co.kr/images/pop_info_visual_03.jpg");
+  background-image: url("https://www.hanwhasystems-recruit.co.kr/assets/images/pop_info_visual_03.jpg");
 }
 
 [class*="jdPop"] {
