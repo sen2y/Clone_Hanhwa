@@ -2020,8 +2020,33 @@ header.fixed .header-inner {
   font-weight: 400;
 }
 
+/* 추가 */
+.faqWrap .faq-list li {
+  height: 90px;
+  transition: 0.4s;
+  border-top: 1px solid #fff;
+}
+
+.faqWrap .faq-list li.active ~ li {
+  transform: translate(0, 187px);
+}
+
+.faqWrap .faq-list li:nth-child(6).active ~ li,
+.faqWrap .faq-list li:nth-child(8).active ~ li,
+.faqWrap .faq-list li:nth-child(10).active ~ li {
+  transform: translate(0, 151px);
+}
+
 .faqWrap .faq-list li.active .content {
-  display: block;
+  height: 100%;
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0, 0);
+  border-top: 1px solid #fff;
+}
+
+.faqWrap .faq-list li.active .content:last-child {
+  margin-bottom: 200px;
 }
 
 .faqWrap .faq-list .head {
@@ -2032,7 +2057,6 @@ header.fixed .header-inner {
   padding-left: 2.5rem;
   font-size: 1.5rem;
   font-weight: 600;
-  border-top: 1px solid #fff;
   cursor: pointer;
 }
 
@@ -2043,12 +2067,17 @@ header.fixed .header-inner {
 }
 
 .faqWrap .faq-list .content {
-  display: none;
   padding: 1.75rem 0 4rem 2.5rem;
   font-weight: 400;
   font-size: 1.1rem;
   line-height: 1.8rem;
-  border-top: 1px solid #fff;
+  /* border-bottom: 1px solid #fff; */
+  height: 0;
+  visibility: hidden;
+  transition: transform 0.6s, opacity 0.4s;
+  transform: translate(0, -20px);
+  opacity: 0;
+  transition: 0.4s;
 }
 
 .faqWrap .faq-list .content:before {
