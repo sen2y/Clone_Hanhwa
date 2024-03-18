@@ -1319,6 +1319,24 @@ header.fixed .header-inner {
   height: 1.65rem;
   background-image: url("https://www.hanwhasystems-recruit.co.kr/assets/images/kv_air.png");
   background-size: auto 1.65rem;
+  transform-origin: center top;
+  animation: air 1.7s infinite;
+}
+
+@keyframes air {
+  0% {
+    transform: translate(-800px, 0px);
+    opacity: 0;
+  }
+
+  40% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(1000px, 0px);
+    opacity: 0;
+  }
 }
 
 .headingWrap .keyvisual-wrap .tank {
@@ -1328,6 +1346,19 @@ header.fixed .header-inner {
   height: 1.7rem;
   background-image: url("https://www.hanwhasystems-recruit.co.kr/assets/images/kv_tank.png");
   background-size: auto 1.7rem;
+  transform-origin: center top;
+  animation: tank 1.7s infinite alternate;
+}
+
+@keyframes tank {
+  0% {
+    transform: translate(0px, 10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0px, -10px);
+    opacity: 1;
+  }
 }
 
 .headingWrap .keyvisual-wrap .char-wrap {
@@ -1345,6 +1376,17 @@ header.fixed .header-inner {
   height: 12.55rem;
   background-image: url("https://www.hanwhasystems-recruit.co.kr/assets/images/kv_char.png");
   background-size: auto 12.55rem;
+  transform-origin: center top;
+  animation: char-wrap 1s infinite alternate;
+}
+
+@keyframes char-wrap {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(0px, -10px);
+  }
 }
 
 .headingWrap .keyvisual-wrap .shadow {
@@ -1352,6 +1394,16 @@ header.fixed .header-inner {
   left: calc(50% - 3.45rem);
   width: 7.2rem;
   height: 1.65rem;
+  animation: shadow 1s infinite alternate;
+  mix-blend-mode: multiply;
+}
+@keyframes shadow {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    transform: translateY(10px) scale(1.1);
+  }
 }
 
 .headingWrap .keyvisual-wrap .shadow div {
