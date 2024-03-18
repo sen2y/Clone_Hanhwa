@@ -32,6 +32,10 @@ DEMO : [클론 코딩 - 한화시스템 채용공고](https://clone-hanhwasystem
 1시간 = 60초
 1일 = 24시간
 
+#### d-day 지나면 ? `if (gap < 0) {clearInterval(dDayTimer);}`
+
+=> 남은 시간이 0보다 작으면 `clearInterval` 함수를 호출하여 타이머 중지
+
 ```javascript
 // 카운트 다운 (1초마다 화면 출력 업데이트)
 const countDay = document.querySelector(".count .day");
@@ -61,6 +65,11 @@ function updateCountdown() {
   countHour.textContent = gapHour;
   countMin.textContent = gapMin;
   countSec.textContent = gapSec;
+
+  // 남은 시간이 0보다 작으면 clearInterval 함수를 호출하여 타이머 중지
+  if (gap < 0) {
+    clearInterval(dDayTimer);
+  }
 }
 
 updateCountdown();
