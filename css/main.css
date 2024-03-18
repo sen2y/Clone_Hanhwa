@@ -841,7 +841,6 @@ header.fixed .header-inner {
   height: 100%;
   background-image: url("https://www.hanwhasystems-recruit.co.kr/assets/images/kv_char_shadow.png");
   background-size: auto 1.65rem;
-  mix-blend-mode: multiply;
 }
 
 .headingWrap .keyvisual-wrap .light-wrap {

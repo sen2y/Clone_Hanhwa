@@ -27,7 +27,6 @@ const header = document.querySelector("header");
 window.addEventListener(
   "scroll",
   _.throttle(function () {
-    console.log("scroll!");
     if (window.scrollY > 100) {
       header.classList.add("fixed");
     } else {
@@ -35,3 +34,37 @@ window.addEventListener(
     }
   }, 300)
 ); // 300ms 단위로 호출
+
+// 카운트 다운 (1초마다 화면 출력 업데이트)
+const countDay = document.querySelector(".count .day");
+const countHour = document.querySelector(".count .hour");
+const countMin = document.querySelector(".count .min");
+const countSec = document.querySelector(".count .sec");
+
+function updateCountdown() {
+  const today = new Date();
+  // '03/24/2024 2:59:59 PM'
+  const dDay = new Date("03/24/2024 2:59:59 PM");
+  // getTime() - 해당 날짜와 시간을 나타내는 밀리초 단위의 숫자를 반환
+  const gap = dDay.getTime() - today.getTime();
+
+  // 남은 시간 계산
+  // floor - 소수점 반내림
+  const gapDay = Math.floor(gap / (1000 * 60 * 60 * 24));
+  const gapHour = String(Math.floor((gap / (1000 * 60 * 60)) % 24)).padStart(
+    2,
+    "0"
+  );
+  const gapMin = String(Math.floor((gap / (1000 * 60)) % 60)).padStart(2, "0");
+  const gapSec = String(Math.floor((gap / 1000) % 60)).padStart(2, "0");
+
+  // 남은 시간을 화면에 출력
+  countDay.textContent = gapDay;
+  countHour.textContent = gapHour;
+  countMin.textContent = gapMin;
+  countSec.textContent = gapSec;
+}
+
+updateCountdown();
+// 1초마다 updateCountdown 함수 호출
+let dDayTimer = setInterval(updateCountdown, 1000);
