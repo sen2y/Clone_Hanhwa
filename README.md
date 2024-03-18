@@ -8,11 +8,50 @@
 
 DEMO : [클론 코딩 - 한화시스템 채용공고](https://clone-hanhwasystems-recruit.netlify.app/ "클론코딩 페이지로 이동!")
 
-### animation
+### ▪️ animation
+
+`animation: shadow 1s infinite alternate;`
 
 @keyframes 이용
 
-### 그림자 효과
+```css
+.headingWrap .keyvisual-wrap .shadow {
+  animation: shadow 1s infinite alternate;
+}
+
+@keyframes shadow {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    transform: translateY(10px) scale(1.1);
+  }
+}
+```
+
+### ▪️ Header 스크롤 효과 (스크롤 시, .fixed 추가 / 색상 변경)
+
+```javascript
+// throttle : 일정 시간 간격을 두고 이벤트가 연속해서 발생하는 것을 제한하는 기능
+// 일정시간에 한번씩만 호출되도록 설정
+// _.throttle(함수, 시간)
+const header = document.querySelector("header");
+
+window.addEventListener(
+  "scroll",
+  _.throttle(function () {
+    if (window.scrollY > 100) {
+      header.classList.add("fixed");
+    } else {
+      header.classList.remove("fixed");
+    }
+  }, 300)
+); // 300ms 단위로 호출
+```
+
+### ▪️ 그림자 효과
+
+`mix-blend-mode: multiply;`
 
 기존 이미지=> 효과적용
 
