@@ -27,7 +27,6 @@ const header = document.querySelector("header");
 window.addEventListener(
   "scroll",
   _.throttle(function () {
-    console.log("scroll!");
     if (window.scrollY > 100) {
       header.classList.add("fixed");
     } else {
@@ -35,3 +34,23 @@ window.addEventListener(
     }
   }, 300)
 ); // 300ms 단위로 호출
+
+// 카운트 다운
+const countDay = document.querySelector(".count .day");
+const countHour = document.querySelector(".count .hour");
+const countMin = document.querySelector(".count .min");
+const countSec = document.querySelector(".count .sec");
+
+const today = new Date();
+// '03/24/2024 2:59:59 PM'
+console.log(today);
+const dDay = new Date("03/24/2024 2:59:59 PM");
+console.log(dDay);
+// getTime() - 해당 날짜와 시간을 나타내는 밀리초 단위의 숫자를 반환
+const gap = dDay.getTime() - today.getTime();
+
+// 남은 시간 계산
+// floor - 소수점 반내림
+const gapDay = Math.floor(gap / (1000 * 60 * 60 * 24));
+const gapHour = Math.floor((gap % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+console.log(gapDay);
