@@ -63,6 +63,11 @@ function updateCountdown() {
   countHour.textContent = gapHour;
   countMin.textContent = gapMin;
   countSec.textContent = gapSec;
+
+  // 남은 시간이 0보다 작으면 clearInterval 함수를 호출하여 타이머 중지
+  if (gap < 0) {
+    clearInterval(dDayTimer);
+  }
 }
 
 updateCountdown();
