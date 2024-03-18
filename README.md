@@ -2,7 +2,7 @@
 
 ### 👆 기존 사이트와의 차이
 
-###### jQuery 내 코드 및 기존 css 코드에 적용 안되는 css 재적용하기 / html구조 동일,
+###### jQuery 내 코드 js코드로 변경 및 기존 css 코드에 적용 안되는 css 재적용하기 / html구조 동일,
 
 기존 사이트 : [한화시스템 채용공고](https://www.hanwhasystems-recruit.co.kr/?utm_source=saramin&utm_medium=cpc&utm_campaign=systems_saramin&utm_id=systemsm "한화시스템 채용공고 페이지로 이동!")
 
